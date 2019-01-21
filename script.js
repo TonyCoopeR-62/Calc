@@ -1,4 +1,3 @@
-'use strict'
 window.addEventListener('load', function onWindowLoad() {
     // кнопки калькулятора
     var btns = [
@@ -23,7 +22,7 @@ window.addEventListener('load', function onWindowLoad() {
     });
 
     //добавляем обработчик на клик кнопки
-    document.querySelectorAll('#app.btn').forEach(function (button){
+    document.querySelectorAll('#app .btn').forEach(function (button){
         //добавляем действие при клике
         button.addEventListener('click', onButtonClick);
     });
